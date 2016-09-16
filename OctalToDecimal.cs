@@ -2,6 +2,10 @@ using System;
 
 namespace BaseConverterRefactor {
   public class OctalToDecimal : BaseConverterRefactor {
+    public OctalToDecimal() {
+      FromBase = "Octal";
+      ToBase = "Decimal";
+    }
     public int GetResult() {
       return Convert.ToInt32(Convert.ToString(Number), 8);
     }

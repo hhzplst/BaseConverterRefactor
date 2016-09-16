@@ -2,6 +2,10 @@ using System;
 
 namespace BaseConverterRefactor {
   public class HexToDecimal : BaseConverterRefactor {
+    public HexToDecimal() {
+      FromBase = "Hexadecimal";
+      ToBase = "Decimal";
+    }
     public int GetResult() {
       return Convert.ToInt32(Convert.ToString(Number), 16);
     }

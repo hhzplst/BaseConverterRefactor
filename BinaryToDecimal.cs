@@ -2,6 +2,10 @@ using System;
 
 namespace BaseConverterRefactor {
   public class BinaryToDecimal : BaseConverterRefactor {
+    public BinaryToDecimal() {
+      FromBase = "Binary";
+      ToBase = "Decimal";
+    }
     public int GetResult() {
       return Convert.ToInt32(Convert.ToString(Number), 2);
     }
